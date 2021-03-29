@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      th:with="lang=${#locale.language}" th:lang="${lang}">
+<head>
+    <title>Puppy!</title>
+</head>
+<body>
+<h1>
+    Here she is!
+</h1>
+
+<img th:src="@{images/GrassStainedPuppy.jpg}">
+
+</body>
+</html>

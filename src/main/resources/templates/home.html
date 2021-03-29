@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      th:with="lang=${#locale.language}" th:lang="${lang}">
+<head>
+    <title>Hello World!</title>
+</head>
+<body>
+<h1>
+    Welcome!
+</h1>
+
+<p>
+    This page was set up as a simple demonstration of a few key skills I've been working on:
+    <ul>
+        <li>Model View Controller (Spring MVC)</li>
+        <li>Spring Boot</li>
+        <li>Basic HTML</li>
+    </ul>
+
+    Here are some possible items to add:
+    <ul>
+        <li>JavaScript</li>
+        <li>A Database</li>
+        <li>Form Screen</li>
+    </ul>
+</p>
+
+<p>
+    Want to see a <a href="/puppy">cute puppy?</a>
+</p>
+
+<p>
+    Current time is <span th:text="${serverTime}"/>
+</p>
+
+</body>
+</html>
