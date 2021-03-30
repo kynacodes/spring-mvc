@@ -1,0 +1,71 @@
+html * {
+  font-family: Arial narrow, sans-serif;
+}
+
+.headerBar{
+  border:1px solid black;
+  background-color: lightgray;
+  text-align:center;
+}
+.subheader{
+border:1px solid black;
+  background-color: lightgray;
+  text-align:left;
+  padding-left: 15px;
+}
+
+.categoryBar{
+  width:25%;
+  border:1px solid black;
+  padding-left:20px;
+  background-color:lightgray;
+}
+
+/*.scoreBar{
+  width:65%;
+  border-top:1px solid black;
+  border-bottom:1px solid black;
+  border-right:1px solid black;
+  float:left;
+  padding-left:20px;
+  background-color:lightgray;
+}*/
+
+/* .leftColumn{
+  width: 25%;
+  border: 1px solid black; *****THIS LINE PREVIOUSLY COMMENTED OUT.*****
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  float:left;
+  padding-left: 20px;
+
+} */
+
+.middleColumn{
+  width:65%;
+  /*border: 1px solid black;*/
+  padding-left: 20px;
+  float: left;
+}
+
+label{
+  padding:5px;
+  margin:10px;
+  white-space:nowrap;
+  align-content:sp
+  display: block;
+  margin-left:20px;
+}
+
+input{
+	float:left;
+    margin-left:10px;
+}
+
+button{
+  font-size:20px;
+  margin-top:25px;
+  padding: 15px;
+  border:2px solid black;
+  background-color:lightgray;
+}

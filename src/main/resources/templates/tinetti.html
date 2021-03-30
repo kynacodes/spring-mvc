@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tinetti Balance & Gait Assessment</title>
+    <link rel="stylesheet" type="text/css" href="css/tinetti.css">
+    <script type="text/javascript" src="js/tinetti.js"></script>
+</head>
+
+<body>
+
+<div class="headerBar">
+    <h1> TINETTI BALANCE & GAIT ASSESSMENT</h1>
+
+</div>
+
+<br>
+
+<!-- <div class= "categoryBar">
+    <h3>CATEGORY</h3>
+    <p>SKIPPED THE SCORE BAR HERE FOR NOW </P>
+    <p>WOULDN'T ALIGN</p>
+</div> -->
+
+<div class="subheader">
+    <h3>AMBULATION</h3>
+</div>
+
+<div class="questionBlock">
+    <div class="leftColumn">
+        <h4>SITTING BALANCE</h4>
+    </div>
+</div>
+
+<form onsubmit="total()">
+    <fieldset>
+        <div class="middleColumn">
+
+            <div>
+                <input type="radio" id="sitting0" name="sitting" value="0"/>
+                <label for="sitting">0: Leans or slides in chair</label>
+            </div>
+
+            <div>
+                <input type="radio" id="sitting1" name="sitting" value="1"/>
+                <label for="sitting">1: Steady, safe </label>
+            </div>
+
+        </div>
+    </fieldset>
+
+    </div>
+
+    <div class="questionBlock">
+        <div class="leftColumn">
+            <h4>RISES FROM CHAIR</h4>
+        </div>
+
+        <fieldset>
+            <div class="middleColumn">
+                <div>
+                    <input type="radio" id="rising0" name="rising" value="0"/>
+                    <label for="rising"> 0: Unable to rise without help </label>
+                </div>
+
+                <div>
+                    <input type="radio" id="rising1" name="rising" value="1"/>
+                    <label for="rising"> 1: Able to rise using arms to help </label>
+                </div>
+
+                <div>
+                    <input type="radio" id="rising2" name="rising" value="2"/>
+                    <label for="rising"> 2: Able to rise without using arms to help </label>
+                </div>
+
+            </div>
+        </fieldset>
+
+    </div>
+
+    <div class="questionBlock">
+        <div class="leftColumn">
+            <h3>ATTEMPTS TO RISE</h3>
+        </div>
+
+        <fieldset>
+            <div class="middleColumn">
+
+                <div>
+                    <input type="radio" id="attempts0" name="attempts" value="0"/>
+                    <label for="attempts"> 0: Unable to rise without help </label>
+                </div>
+
+                <div>
+                    <input type="radio" id="attempts1" name="attempts" value="1"/>
+                    <label for="attempts"> 1: Able to rise; requires more than one attempt. </label>
+                </div>
+
+                <div>
+                    <input type="radio" id="attempt2" name="attempts" value="2"/>
+                    <label for="attempts"> 2: Able to rise; requires one attempt </label>
+                </div>
+
+            </div>
+        </fieldset>
+
+    </div>
+
+    <div class="questionBlock">
+        <div class="leftColumn">
+            <h3>STANDING BALANCE (1st 5 seconds)</h3>
+        </div>
+
+        <fieldset>
+            <div class="middleColumn">
+
+                <div>
+                    <input type="radio" id="support0" name="support" value="0"/>
+                    <label for="support"> 0: Unsteady (staggers, moves feet, trunk sways) </label>
+                </div>
+
+                <div>
+                    <input type="radio" id="support1" name="support" value="1"/>
+                    <label for="support"> 1: Steady, but uses walker or other support </label>
+                </div>
+
+                <div>
+                    <input type="radio" id="support2" name="support" value="2"/>
+                    <label for="support"> 2: Steady without walker or other support </label>
+                </div>
+
+            </div>
+        </fieldset>
+
+    </div>
+
+    <div class="questionBlock">
+        <div class="leftColumn">
+            <h3>STANDING BALANCE</h3>
+        </div>
+
+        <fieldset>
+            <div>
+                <div class="middleColumn">
+                    <input type="radio" id="stance0" name="stance" value="0"/>
+                    <label for="stance"> 0: Unsteady </label>
+                </div>
+
+                <div class="middleColumn">
+                    <input type="radio" id="stance1" name="stance" value="1"/>
+                    <label for="stance"> 1: Steady, but with wide stance and uses support </label>
+                </div>
+
+                <div class="middleColumn">
+                    <input type="radio" id="stance2" name="stance" value="2"/>
+                    <label for="stance"> 2: Narrow stance without support </label>
+                </div>
+            </div>
+        </fieldset>
+
+    </div>
+
+    <div class="questionBlock">
+        <div class="leftColumn">
+            <h3>NUDGED</h3>
+        </div>
+
+        <fieldset>
+            <div>
+                <div class="middleColumn">
+                    <input type="radio" id="nudged0" name="nudged" value="0"/>
+                    <label for="nudged"> 0: Begins to fall </label>
+                </div>
+
+                <div class="middleColumn">
+                    <input type="radio" id="nudged1" name="nudged" value="1"/>
+                    <label for="nudged"> 1: Staggers, grabs, catches self </label>
+                </div>
+
+                <div class="middleColumn">
+                    <input type="radio" id="nudged2" name="nudged" value="2"/>
+                    <label for="nudged"> 2: Steady </label>
+                </div>
+            </div>
+        </fieldset>
+
+    </div>
+
+    <div class="questionBlock">
+        <div class="leftColumn">
+            <h3>EYES CLOSED</h3>
+        </div>
+
+        <fieldset>
+            <div>
+                <div class="middleColumn">
+                    <input type="radio" id="eyesClosed0" name="eyesClosed" value="0"/>
+                    <label for="eyesClosed"> 0: Unsteady </label>
+                </div>
+
+                <div class="middleColumn">
+                    <input type="radio" id="eyesClosed1" name="eyesClosed" value="0"/>
+                    <label for="eyesClosed"> 1: Steady </label>
+                </div>
+            </div>
+        </fieldset>
+
+    </div>
+
+    <div class="questionBlock">
+        <div class="leftColumn">
+            <h3>TURNING 360 DEGREES (STEPS)</h3>
+        </div>
+
+        <fieldset>
+            <div>
+                <div class="middleColumn">
+                    <input type="radio" id="turnSteps0" name="turnSteps" value="0"/>
+                    <label for="turnSteps"> 0: Discontinuous steps </label>
+                </div>
+
+                <div class="middleColumn">
+                    <input type="radio" id="turnSteps1" name="turnSteps" value="1"/>
+                    <label for="turnSteps"> 1: Continuous steps </label>
+                </div>
+            </div>
+        </fieldset>
+
+        <div class="questionBlock">
+            <div class="leftColumn">
+                <h3>TURNING 360 DEGREES (STABILITY)</h3>
+            </div>
+
+            <fieldset>
+                <div>
+                    <div class="middleColumn">
+                        <input type="radio" id="turnSteady0" name="turnSteady" value="0"/>
+                        <label for="turnSteady"> 0: Unsteady (grabs, staggers) </label>
+                    </div>
+
+                    <div class="middleColumn">
+                        <input type="radio" id="turnSteady1" name="turnSteady" value="1"/>
+                        <label for="turnSteady"> 1: Steady </label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <div class="questionBlock">
+                <div class="leftColumn">
+                    <h3>SITTING DOWN (GETTING SEATED)</h3>
+                </div>
+
+                <fieldset>
+                    <div>
+                        <div class="middleColumn">
+                            <input type="radio" id="sitDown0" name="sitDown" value="0"/>
+                            <label for="sitDown"> 0: Unsafe (misjudged distance, falls into chair) </label>
+                        </div>
+
+                        <div class="middleColumn">
+                            <input type="radio" id="sitDown1" name="sitDown" value="1"/>
+                            <label for="sitDown"> 1: Uses arms or not a smooth motion </label>
+                        </div>
+
+                        <div class="middleColumn">
+                            <input type="radio" id="sitDown2" name="sitDown" value="1"/>
+                            <label for="sitDown"> 2: Safe, smooth motion </label>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <p></p>
+
+                <div class="subheader">
+                    <h3>GAIT</h3>
+                </div>
+
+                <div class="questionBlock">
+                    <div class="leftColumn">
+                        <h3>INDICATION OF GAIT</h3>
+                    </div>
+
+                    <fieldset>
+                        <div>
+                            <div class="middleColumn">
+                                <input type="radio" id="gait0" name="gait" value="0"/>
+                                <label for="gait"> 0: Any hesitancy or multiple attempts </label>
+                            </div>
+
+                            <div class="middleColumn">
+                                <input type="radio" id="gait1" name="gait" value="1"/>
+                                <label for="gait"> 1: No hesitancy </label>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <div class="questionBlock">
+                        <div class="leftColumn">
+                            <h3>STEP LENGTH & HEIGHT</h3>
+                        </div>
+
+                        <fieldset>
+                            <div>
+                                <div class="middleColumn">
+                                    <input type="radio" id="stepLength0" name="stepLength" value="0"/>
+                                    <label for="stepLength"> 0: Step to </label>
+                                </div>
+
+                                <div class="middleColumn">
+                                    <input type="radio" id="stepLength1L" name="stepLength" value="1"/>
+                                    <label for="stepLength"> 1: Step through left </label>
+                                </div>
+
+                                <div class="middleColumn">
+                                    <input type="radio" id="stepLength1R" name="stepLength" value="1"/>
+                                    <label for="stepLength"> 1: Step through right </label>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <div class="questionBlock">
+                            <div class="leftColumn">
+                                <h3>FOOT CLEARANCE</h3>
+                            </div>
+
+                            <fieldset>
+                                <div>
+                                    <div class="middleColumn">
+                                        <input type="radio" id="footClearance0" name="footClearance" value="0"/>
+                                        <label for="footClearance"> 0: Foot drop </label>
+                                    </div>
+
+                                    <div class="middleColumn">
+                                        <input type="radio" id="footClearance1L" name="footClearance" value="1"/>
+                                        <label for="footClearance"> 1: Left foot clears the floor </label>
+                                    </div>
+
+                                    <div class="middleColumn">
+                                        <input type="radio" id="footClearance1R" name="footClearance" value="1"/>
+                                        <label for="footClearance"> 1: Right foot clears the floor </label>
+                                    </div>
+                                </div>
+                            </fieldset>
+
+                            <div class="questionBlock">
+                                <div class="leftColumn">
+                                    <h3>STEP SYMMETRY</h3>
+                                </div>
+
+                                <fieldset>
+                                    <div>
+                                        <div class="middleColumn">
+                                            <input type="radio" id="symmetry0" name="symmetry" value="0"/>
+                                            <label for="symmetry"> 0: Right and left step length are not equal </label>
+                                        </div>
+
+                                        <div class="middleColumn">
+                                            <input type="radio" id="symmetry1" name="symmetry" value="1"/>
+                                            <label for="symmetry"> 1: Right and left step length appear equal </label>
+                                        </div>
+                                    </div>
+                                </fieldset>
+
+
+                                <div class="questionBlock">
+                                    <div class="leftColumn">
+                                        <h3>STEP CONTINUITY</h3>
+                                    </div>
+
+                                    <fieldset>
+                                        <div>
+                                            <div class="middleColumn">
+                                                <input type="radio" id="continuity0" name="continuity" value="0"/>
+                                                <label for="continuity"> 0: Stopping of discontinuity between
+                                                    steps </label>
+                                            </div>
+
+                                            <div class="middleColumn">
+                                                <input type="radio" id="continuity1" name="continuity" value="1"/>
+                                                <label for="continuity"> 1: Steps appear continuous </label>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+
+                                    <div class="questionBlock">
+                                        <div class="leftColumn">
+                                            <h3>PATH</h3>
+                                        </div>
+
+                                        <fieldset>
+                                            <div>
+                                                <div class="middleColumn">
+                                                    <input type="radio" id="path0" name="path" value="0"/>
+                                                    <label for="path"> 0: Marked deviation </label>
+                                                </div>
+
+                                                <div class="middleColumn">
+                                                    <input type="radio" id="path1" name="path" value="1"/>
+                                                    <label for="path"> 1: Mild/moderate deviation or uses a walking
+                                                        aid </label>
+                                                </div>
+
+                                                <div class="middleColumn">
+                                                    <input type="radio" id="sitDown2" name="sitDown" value="1"/>
+                                                    <label for="path"> 2: Straight wthout a walking aid </label>
+                                                </div>
+                                            </div>
+                                        </fieldset>
+
+                                        <div class="questionBlock">
+                                            <div class="leftColumn">
+                                                <h3>TRUNK</h3>
+                                            </div>
+
+                                            <fieldset>
+                                                <div>
+                                                    <div class="middleColumn">
+                                                        <input type="radio" id="trunk0" name="trunk" value="0"/>
+                                                        <label for="trunk"> 0: Marked sway or uses a walking
+                                                            aid </label>
+                                                    </div>
+
+                                                    <div class="middleColumn">
+                                                        <input type="radio" id="trunk1" name="trunk" value="1"/>
+                                                        <label for="trunk"> 1: No sway, flexes knees/back/uses arms to
+                                                            balance </label>
+                                                    </div>
+
+                                                    <div class="middleColumn">
+                                                        <input type="radio" id="trunk2" name="trunk" value="2"/>
+                                                        <label for="trunk"> 2: No sway, no flexion of knees or back, use
+                                                            of arms, or walking aid </label>
+                                                    </div>
+                                                </div>
+                                            </fieldset>
+
+                                            <div class="questionBlock">
+                                                <div class="leftColumn">
+                                                    <h3>WALKING TIME</h3>
+                                                </div>
+
+                                                <fieldset>
+                                                    <div>
+                                                        <div class="middleColumn">
+                                                            <input type="radio" id="time0" name="time" value="0"/>
+                                                            <label for="time"> 0: Heels apart </label>
+                                                        </div>
+
+                                                        <div class="middleColumn">
+                                                            <input type="radio" id="time1" name="time" value="1"/>
+                                                            <label for="time"> 1: Heels almost touching while
+                                                                walking </label>
+                                                        </div>
+
+                                                        <div class="middleColumn">
+                                                            <input type="radio" id="trunk2" name="trunk" value="2"/>
+                                                            <label for="trunk"> 2: No sway, no flexion of knees or back,
+                                                                use of arms, or walking aid </label>
+                                                        </div>
+                                                    </div>
+                                                </fieldset>
+
+                                                <button type="submit">Calculate Score</button>
+</form>
+<!-- score = Number((document.querySelector("input[name=\"" + radioButtonName + "\"]:checked").value)); -->
+
+</body>
+</html>
