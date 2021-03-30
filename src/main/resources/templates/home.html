@@ -3,6 +3,7 @@
       th:with="lang=${#locale.language}" th:lang="${lang}">
 <head>
     <title>Hello World!</title>
+    <link th:href="@{/css/style.css}" rel="stylesheet"/>
 </head>
 <body>
 <h1>
@@ -16,8 +17,9 @@
         <li>Spring Boot</li>
         <li>Basic HTML</li>
     </ul>
-
-    Here are some possible items to add:
+</p>
+<p>
+Here are some possible items to add:
     <ul>
         <li>JavaScript</li>
         <li>A Database</li>
@@ -26,7 +28,7 @@
 </p>
 
 <p>
-    Want to see a <a href="/puppy">cute puppy?</a>
+     Just for fun: a link to a <a href="/puppy">cute puppy!</a>
 </p>
 
 <p>
